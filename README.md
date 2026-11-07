@@ -1,6 +1,6 @@
 # 📚TrabalhoGrafos
-📌 Sobre o projeto
-    - Trabalho de grafos
+## 📌 Sobre o projeto
+Trabalho de grafos
 
 ## 📖 Descrição
 Trabalho de grafos sobre Lista de adjacência, Matriz de adjacência e Lista de Arestas
