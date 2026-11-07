@@ -6,16 +6,45 @@ Trabalho de grafos
 Trabalho de grafos sobre Lista de adjacência, Matriz de adjacência e Lista de Arestas
 
 ## 👥  Integrantes
-1. Jonathan Ishida Biazollo - RA: 2032320
-2. Leonardo Honorato Pereira - RA:  2034159
-3. Luiz Felipe Santos Soares - RA: 2035568
-4. Luiz Otavio Vieira Martins Guimarães - RA: 2035700
+
+| Nome | RA |
+|------|----|
+| Jonathan Ishida Biazollo | 2032320 |
+| Leonardo Honorato Pereira | 2034159 |
+| Luiz Felipe Santos Soares | 2035568 |
+| Luiz Otavio Vieira Martins Guimarães | 2035700 |
 
 ## 🛠️  Tecnologias utilizadas
-Python
+- 🐍Python
+- 📓Google Colab
+- 💻Visual Studio Code
+- 🐙GitHub
 
 ## 📂 Estrutura do projeto
-O trabalho está dividido de forma simples contendo um README e os arquivos de forma individual
+- Ex01
+    - Lista de adjacência
+        - Inserir e remover vértices
+        - Inserir e remover arestas
+        - Calcular e exibir o grau de cada vértice
+        - Verificar se existe uma aresta que vai de um vértice para o outro
+        - Listar todos os Vizinhos de um vértice
+        - Verificar se um determinado percurso é possível
+- Ex02
+    - Matriz de adjacência
+        - Inserir e remover vértices
+        - Inserir e remover arestas
+        - Calcular e exibir o grau de cada vértice
+        - Verificar se existe uma aresta que vai de um vértice para o outro
+        - Listar todos os Vizinhos de um vértice
+        - Verificar se um determinado percurso é possível
+- Ex03
+    - Lista de arestas
+        - Inserir e remover vértices
+        - Inserir e remover arestas
+        - Calcular e exibir o grau de cada vértice
+        - Verificar se existe uma aresta que vai de um vértice para o outro
+        - Listar todos os Vizinhos de um vértice
+        - Verificar se um determinado percurso é possível
 
 ## 🚀 Como executar
 Entre no Visual studio, abra o terminal, digite o caminho do projeto e digite: py nome_do_arquivo.py e pressione Enter
