@@ -52,16 +52,16 @@ def removerVertice(grafo, vertice):
 
 #Remover Arestas, funciona para ambos
 def removerAresta(grafo, origem, destino, direcionado):
-  if origem not in grafo or destino not in grafo:
-    print("Verifique os vértices, pois 1 ou ambos não existem neste grafo")
-    return
-  if origem in grafo and destino in grafo and direcionado:#verifico se os 2 vértices existem
-    while destino in grafo[origem]:#agora verifico se a aresta entre esses 2 vértices existe e retiro ela mesmo que apareça 2,3 ou mais vezes, já que arestas múltiplas podem existir, se não pudessem existir, trocaria simplesmente o while por if
-      grafo[origem].remove(destino)
-  else:
-    while destino in grafo[origem] and origem in grafo[destino]:# a ideia é a mesma do direcionado, porém como no NÂO direcionado eu preciso tirar em ambos os vértices é necessário fazer essa verificação tanto na orighem quanto no destino
-      grafo[origem].remove(destino)
-      grafo[destino].remove(origem)
+    if origem not in grafo or destino not in grafo:
+        print("Verifique os vértices, pois 1 ou ambos não existem neste grafo")
+        return
+
+    while destino in grafo[origem]:
+        grafo[origem].remove(destino)
+
+    if not direcionado and origem != destino:
+        while origem in grafo[destino]:
+            grafo[destino].remove(origem)
 
 #Calcular grau de cada vértice, Grafo NÂO DIRECIONADO
 def calcularGrauVerticeNaoDirecionado(grafo):
@@ -70,7 +70,7 @@ def calcularGrauVerticeNaoDirecionado(grafo):
   print("="*40)
   for v in grafo:
     grau = len(grafo[v]) + grafo[v].count(v)
-          #tamanho do vértice + 1 se tiver laços
+          #tamanho da lista de adjacência + 1 para cada laço
     print(f"{v}: {grau}")
 
 #Calcular grau de cada vértice, Grafo DIRECIONADO
