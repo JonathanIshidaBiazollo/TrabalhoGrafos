@@ -237,7 +237,7 @@ def menu():
         else:
           print("Percurso INVÁLIDO")
       case _:
-        limpar_tela();
+        limpar_tela()
         print("Opção inválida, tente novamente")
 
 menu()
