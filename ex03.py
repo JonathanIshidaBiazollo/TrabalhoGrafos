@@ -19,14 +19,7 @@ def imprimirGrafo(grafo):
   print(vertices)
 
   print("Arestas: ")
-  for c in range(len(arestas)):
-    origem = arestas[c][0]
-    destino = arestas[c][1]
-
-    if origem == destino:# para laços
-      if arestas.index([origem, destino]) != c:#eu preciso que conte 2x o laço, mas não quero que ao inserir um laço ele apreça 2x na lista
-        continue
-
+  for origem, destino in grafo["arestas"]:
     print(f"{origem} -> {destino}")
 
 # Inserir vértices
@@ -65,7 +58,7 @@ def inserirAresta(grafo, origem, destino, direcionado):
   inserirVertice(grafo, destino)
 
   arestas.append([origem, destino])#append recebe um argumento, nesse caso origem e destino
-  if not direcionado:
+  if not direcionado and origem != destino:#Para evitar que laços apareçam 2 vezes, ex: um laço em A: A, A, sendo que ele deveria aparecer 1 vez apenas
     arestas.append([destino, origem])
 
   arestas.sort()#Para deixar organizada depois de uma nova inserção
@@ -77,7 +70,7 @@ def removerAresta(grafo, origem, destino, direcionado):
   if [origem, destino] in arestas:
     arestas.remove([origem, destino])
 
-  if not direcionado and [destino, origem] in arestas:
+  if not direcionado and origem != destino and [destino, origem] in arestas:#evitar de retirar o mesmo laço de 1 vez, porque pode ser que o usuário não queira tirar todos os laços de A, apenas um
     arestas.remove([destino, origem])
 
 # Grau direcionado
@@ -109,6 +102,9 @@ def calcularGrauVerticeNaoDirecionado(grafo):
     for j in range(len(arestas)):#esse loop serve paara percorrer todas as arestas
       if vertices[i] == arestas[j][0]:
         grau += 1
+
+        if arestas[j][0] == arestas[j][1]:
+          grau += 1 #contar mais uma vez se tiver um laço
 
     print(f"{vertices[i]} = {grau}")
 
