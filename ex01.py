@@ -155,7 +155,7 @@ def menu():
         direcionado = False
         break
       case _:
-        limpar_tela();
+        limpar_tela()
         print("Opção inválida, tente novamente")
 
   while True:
