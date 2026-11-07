@@ -1,9 +1,12 @@
-# 📚TrabalhoGrafos
+# 📚Trabalho sobre Grafos
 ## 📌 Sobre o projeto
-Trabalho de grafos
+Trabalho sobre grafos, feito na aula do professor Matheus Santi no Curso de Ciência da Computação da Unimar.
 
 ## 📖 Descrição
-Trabalho de grafos sobre Lista de adjacência, Matriz de adjacência e Lista de Arestas
+- Trabalho de grafos sobre:
+    - Lista de adjacência, 
+    - Matriz de adjacência e
+    - Lista de Arestas.
 
 ## 👥  Integrantes
 
@@ -47,7 +50,7 @@ Trabalho de grafos sobre Lista de adjacência, Matriz de adjacência e Lista de 
         - Verificar se um determinado percurso é possível
 
 ## 🚀 Como executar
-Entre no Visual studio, abra o terminal, digite o caminho do projeto e digite: py nome_do_arquivo.py e pressione Enter
+Entre no Visual studio, abra o terminal, digite o caminho do projeto e digite: py nome_do_arquivo.py e pressione Enter ou copie e cole o código no google colab e pressione o botão ▶ na célula.
 
 ## 📄	Licença
 Trabalho desenvolvido para fins acadêmicos na matéria de Resolução de problemas de Grafos no Curso de Ciência da Computação, embora nenhuma licença de uso ou distribuição tenha sido definida, pode ser usado para fins acadêmicos, como consulta por outras pessoas.
